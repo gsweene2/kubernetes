@@ -1,14 +1,14 @@
 # kubernetes
 
-## Install minikube
+## Install Minikube
 
 See `MinikubeSetup.md`
 
-## Sample deployment using kubectl
+## Sample Deployment with a Service
 
 See `SampleDeploymentWithService.md`
 
-# On to Kubernetes Basics tutorial
+## Kubernetes Basics tutorial
 
 See `KubernetesBasics.md`
 
