@@ -1,0 +1,44 @@
+Kubernetes Deployment Info
+
+Deployments:
+
+NAME         READY   UP-TO-DATE   AVAILABLE   AGE
+hello-node   1/1     1            1           27m
+
+Pods:
+
+NAME                          READY   STATUS    RESTARTS   AGE
+hello-node-7567d9fdc9-kfbwq   1/1     Running   0          27m
+
+Events:
+
+LAST SEEN   TYPE     REASON              OBJECT                             MESSAGE
+27m         Normal   Scheduled           pod/hello-node-7567d9fdc9-kfbwq    Successfully assigned default/hello-node-7567d9fdc9-kfbwq to docker-desktop
+27m         Normal   Pulling             pod/hello-node-7567d9fdc9-kfbwq    Pulling image "k8s.gcr.io/echoserver:1.4"
+27m         Normal   Pulled              pod/hello-node-7567d9fdc9-kfbwq    Successfully pulled image "k8s.gcr.io/echoserver:1.4" in 6.4666971s
+27m         Normal   Created             pod/hello-node-7567d9fdc9-kfbwq    Created container echoserver
+27m         Normal   Started             pod/hello-node-7567d9fdc9-kfbwq    Started container echoserver
+27m         Normal   SuccessfulCreate    replicaset/hello-node-7567d9fdc9   Created pod: hello-node-7567d9fdc9-kfbwq
+27m         Normal   ScalingReplicaSet   deployment/hello-node              Scaled up replica set hello-node-7567d9fdc9 to 1
+
+Config:
+
+apiVersion: v1
+clusters:
+- cluster:
+    certificate-authority-data: DATA+OMITTED
+    server: https://kubernetes.docker.internal:6443
+  name: docker-desktop
+contexts:
+- context:
+    cluster: docker-desktop
+    user: docker-desktop
+  name: docker-desktop
+current-context: docker-desktop
+kind: Config
+preferences: {}
+users:
+- name: docker-desktop
+  user:
+    client-certificate-data: REDACTED
+    client-key-data: REDACTED
