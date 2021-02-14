@@ -20,6 +20,11 @@ Check installation
 m version
 ```
 
+and start
+```
+m start
+```
+
 ## If you already had a kubenetes cluster...
 
 ```
@@ -62,5 +67,3 @@ kubernetes   ClusterIP      10.96.0.1       <none>        443/TCP          26h
 Service hello-node is now exposed on port 8080 (which maps to 32437 in the pod).
 
 View it by naviagating to `EXTERNAL-IP/PORT(S)` in the browser, like `localhost/8080`
-
-minikube start
