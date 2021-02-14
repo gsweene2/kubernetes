@@ -33,6 +33,18 @@ kubectl config view > myClusters.yaml
 
 Note the config is located at `echo $KUBECONFIG` or `~/.kube/config`
 
+
+## Cluster is running, get cluster info
+
+```
+kubectl cluster-info
+```
+Expected output
+```
+Kubernetes master is running at https://127.0.0.1:55000
+KubeDNS is running at https://127.0.0.1:55000/api/v1/namespaces/kube-system/services/kube-dns:dns/proxy
+```
+
 ## Sample deployment using kubectl
 
 Create a deployment using image `k8s.gcr.io/echoserver:1.4`
@@ -67,3 +79,7 @@ kubernetes   ClusterIP      10.96.0.1       <none>        443/TCP          26h
 Service hello-node is now exposed on port 8080 (which maps to 32437 in the pod).
 
 View it by naviagating to `EXTERNAL-IP/PORT(S)` in the browser, like `localhost/8080`
+
+# On to Kubernetes Basics tutorial
+
+KubernetesBasics.md
